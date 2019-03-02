@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.8"/>
-<title>metapyMCU: Marvin Minsky frame concept</title>
+<title>metapyMCU: extended Marvin Minsky frame concept</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -64,7 +64,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -76,13 +76,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="headertitle">
-<div class="title">Marvin Minsky frame concept </div>  </div>
+<div class="title">extended Marvin Minsky frame concept </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"></div></div><!-- contents -->
+<div class="textblock"><h3>Марвин Минский</h3>
+<h2>Фреймы для представления знаний</h2>
+<ul>
+<li><a href="https://royallib.com/read/minskiy_marvin/freymi_dlya_predstavleniya_znaniy.html#0">https://royallib.com/read/minskiy_marvin/freymi_dlya_predstavleniya_znaniy.html#0</a></li>
+<li><a href="https://ponyatov.quora.com/Minsky-Frames-Database-metaL">https://ponyatov.quora.com/Minsky-Frames-Database-metaL</a> (см. видео в начале)</li>
+</ul>
+<p>Для представления (мета)программ и их обработки в процессе генерации кода используется расширенное представление фреймов Минского (как базовый класс). Оригинальные фреймы не имели очень важного для метапрограммирования функционала: способность хранить упорядоченные объекты. Эта фича необходима для представления программ, в качестве примера см. деревья разбора/AST и реализацию атрибутных грамматик.</p>
+<p>С другой стороны, фреймы имеют практически полное соответстивие объектной парадигме, в т.ч. объектам Python. И если мы попытаемся описать дерево программы через граф питоновских объектов, мы сталкиваемся с необходимостью вводить упорядоченные контейнеры, например для хранения операндов в выражении деления.</p>
+<p>Для некоторой универсализации,</p><ul>
+<li>отделения логики фреймов от логики работы объектной системы в Python,</li>
+<li>возможности реализации на низкоуровневых языках с жесткой типизацией, AOT-компиляцией и соответственно невозможностью произвольно менять структуру класса или единичного объекта в рантайме (C++, Java)</li>
+<li>добавления некоторых фич характерных для функциональных и логических языков программирования (унификация/backtracking и структурный pattern matching),</li>
+</ul>
+<p>было выбрано расширение концепта фрейма, предложенного Марвином Мински, добавлением функционала упорядоченного контейнера <code>nest[]</code>, позволяющего не только хранить <code>attr{}</code>ибуты (слоты), но и любые элементы данных в явно заданном порядке. </p><pre class="fragment">class Frame:
+    def __init__(self,V):
+        self.type  = self.__class__.__name__.lower()
+        self.value = V
+        self.attr  = {}
+        self.nest  = []
+
+print Frame('hello')
+
+&lt;frame:hello&gt;
+</pre><p>Также в большинстве случаев у нас есть необходимость хранить для любого элемента данных два поля:</p><ul>
+<li><code>type</code> <br />
+ явно указывающий на тип фрейма. Мы принципиально не можем оперировать двумя фреймами в выражении типа <code>&lt;string:&gt; + &lt;number:&gt;</code> без их приведения к одному типу, причем это приведение часто зависит от контекста, в каком именно смысле мы это выражение используем (привет долбанутый JavaScript)</li>
+<li><code>value</code> <br />
+ атомарное значение, хранимое в типе языка реализации (Python): нам нужно именовать объекты, хранить значение строк и числовых данных, поэтому также необходимо подкласс фреймов для представления таких значений-примитивов.</li>
+</ul>
+<p>(*) имена type/value фиксированы требованиями библиотеки PLY, если вы захотите использовать ее для создания собтвенного языка метапрограммирования или CLI вместо Python </p>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Mar 2 2019 11:25:01 for metapyMCU by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Mar 2 2019 12:40:48 for metapyMCU by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.8
 </small></address>
