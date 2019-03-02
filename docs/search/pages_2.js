@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['metaprogramming',['metaprogramming',['../meta.html',1,'']]]
+  ['generic_20microcontroller_20programming',['generic microcontroller programming',['../mcu.html',1,'']]]
 ];

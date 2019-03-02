@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hex',['Hex',['../classframe_1_1Hex.html',1,'frame']]]
+  ['generic_20microcontroller_20programming',['generic microcontroller programming',['../mcu.html',1,'']]]
 ];

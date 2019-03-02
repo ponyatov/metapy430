@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['primitive',['Primitive',['../group__prim.html',1,'']]],
-  ['primitive',['Primitive',['../classframe_1_1Primitive.html',1,'frame']]]
+  ['nest',['nest',['../classframe_1_1Frame.html#aabdfa5f5ba0c1bf4da134c25bb10e90b',1,'frame::Frame']]],
+  ['number',['Number',['../classframe_1_1Number.html',1,'frame']]]
 ];

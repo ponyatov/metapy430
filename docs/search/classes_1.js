@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['frame',['Frame',['../classframe_1_1Frame.html',1,'frame']]]
+  ['cpu',['CPU',['../classmeta_1_1CPU.html',1,'meta']]]
 ];

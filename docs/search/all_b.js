@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['string',['String',['../classframe_1_1String.html',1,'frame']]],
-  ['symbol',['Symbol',['../classframe_1_1Symbol.html',1,'frame']]]
+  ['primitive',['Primitive',['../group__prim.html',1,'']]],
+  ['primitive',['Primitive',['../classframe_1_1Primitive.html',1,'frame']]]
 ];
