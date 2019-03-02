@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cortex_2dmx',['Cortex-Mx',['../CortexM.html',1,'']]]
+  ['bin',['Bin',['../classframe_1_1Bin.html',1,'frame']]]
 ];

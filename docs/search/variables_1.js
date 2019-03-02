@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nest',['nest',['../classmsp430_1_1Frame.html#ac405fe4495104d1cf719fc14fb093058',1,'msp430::Frame']]]
+  ['nest',['nest',['../classframe_1_1Frame.html#aabdfa5f5ba0c1bf4da134c25bb10e90b',1,'frame::Frame']]]
 ];

@@ -1,0 +1,7 @@
+<map id="frame.Number" name="frame.Number">
+<area shape="rect" id="node4" href="$classframe_1_1Integer.html" title="integer number " alt="" coords="47,229,146,256"/>
+<area shape="rect" id="node2" href="$classframe_1_1Primitive.html" title="atomic primitive " alt="" coords="41,80,152,107"/>
+<area shape="rect" id="node3" href="$classframe_1_1Frame.html" title="extended Marvin Minsky frame concept " alt="" coords="49,5,145,32"/>
+<area shape="rect" id="node5" href="$classframe_1_1Bin.html" title="machine binary number / bit stream " alt="" coords="5,304,84,331"/>
+<area shape="rect" id="node6" href="$classframe_1_1Hex.html" title="machine hex number " alt="" coords="109,304,191,331"/>
+</map>

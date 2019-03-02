@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['frame',['Frame',['../classmsp430_1_1Frame.html',1,'msp430']]]
+  ['embedded_20linux',['embedded Linux',['../emLinux.html',1,'']]],
+  ['extended_20marvin_20minsky_20frame_20concept',['extended Marvin Minsky frame concept',['../minsky.html',1,'']]]
 ];

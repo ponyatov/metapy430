@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['type',['type',['../classmsp430_1_1Frame.html#a8513abc0b6f34e88faef308aadaeaa43',1,'msp430::Frame']]]
+  ['type',['type',['../classframe_1_1Frame.html#a53443133bf3290c19b371a077e933801',1,'frame::Frame']]]
 ];
