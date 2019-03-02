@@ -1,0 +1,6 @@
+<map id="ARCH" name="ARCH">
+<area shape="rect" id="node1" href="$group__mips.html" title="MIPS " alt="" coords="241,5,296,32"/>
+<area shape="rect" id="node3" href="$group__x86.html" title="x86 personal computer / PC104 / KVM " alt="" coords="246,56,291,83"/>
+<area shape="rect" id="node4" href="$group__arm.html" title="ARM " alt="" coords="243,107,295,133"/>
+<area shape="rect" id="node5" href="$group__hw.html" title="hardware representation &amp; portable programming " alt="" coords="5,56,84,83"/>
+</map>

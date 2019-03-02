@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hardware',['Hardware',['../group__hw.html',1,'']]]
+  ['cortex',['Cortex',['../group__cortex.html',1,'']]]
 ];

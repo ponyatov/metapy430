@@ -1,0 +1,6 @@
+<map id="MCU" name="MCU">
+<area shape="rect" id="node2" href="$group__msp430.html" title="TI msp430 series " alt="" coords="233,5,305,32"/>
+<area shape="rect" id="node3" href="$group__avr.html" title="AVR " alt="" coords="244,56,295,83"/>
+<area shape="rect" id="node4" href="$group__cortex.html" title="Cortex " alt="" coords="239,107,300,133"/>
+<area shape="rect" id="node5" href="$group__hw.html" title="hardware representation &amp; portable programming " alt="" coords="5,56,84,83"/>
+</map>

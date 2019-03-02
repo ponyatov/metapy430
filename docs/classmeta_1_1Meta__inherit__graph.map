@@ -1,6 +1,8 @@
 <map id="meta.Meta" name="meta.Meta">
-<area shape="rect" id="node3" href="$classmeta_1_1HW.html" title="hardware " alt="" coords="14,155,93,181"/>
-<area shape="rect" id="node2" href="$classframe_1_1Frame.html" title="extended Marvin Minsky frame concept " alt="" coords="5,5,101,32"/>
-<area shape="rect" id="node4" href="$classmeta_1_1CPU.html" title="processor unit " alt="" coords="11,229,95,256"/>
-<area shape="rect" id="node5" href="$classmcu_1_1MCU.html" title="microcontroller " alt="" coords="12,304,95,331"/>
+<area shape="rect" id="node3" href="$classmeta_1_1HW.html" title="hardware " alt="" coords="69,155,148,181"/>
+<area shape="rect" id="node7" href="$classmeta_1_1OS.html" title="meta.OS" alt="" coords="173,155,247,181"/>
+<area shape="rect" id="node2" href="$classframe_1_1Frame.html" title="extended Marvin Minsky frame concept " alt="" coords="111,5,207,32"/>
+<area shape="rect" id="node4" href="$classmeta_1_1ARCH.html" title="architecture " alt="" coords="5,229,100,256"/>
+<area shape="rect" id="node5" href="$classmeta_1_1CPU.html" title="processor unit " alt="" coords="124,229,208,256"/>
+<area shape="rect" id="node6" href="$classmcu_1_1MCU.html" title="microcontroller " alt="" coords="125,304,207,331"/>
 </map>

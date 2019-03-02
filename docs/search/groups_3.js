@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['primitive',['Primitive',['../group__prim.html',1,'']]]
+  ['hardware',['Hardware',['../group__hw.html',1,'']]]
 ];
