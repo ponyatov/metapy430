@@ -27,6 +27,13 @@ class Frame:
     ## print in full tree-formatted text
     def __repr__(self):
         return self.dump()
+    def dump(self,depth=0,prefix=''):
+        S = self.pad(depth) + self.head(prefix)
+        return S
+    def head(self,prefix):
+        return '%s<%s:%s>' % (prefix, self.type, self.value)
+    def pad(self,N):
+        return '\n'+'\t'*N
 
 print Frame('hello')
 
