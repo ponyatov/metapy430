@@ -37,7 +37,7 @@ print Frame('hello')
 ## atomic primitive
 class Primitive(Frame): pass
 
-## `s`ymbol names objects, variables, modules,..
+## `s`ymbol names objects, variables, modules, etc
 class Symbol(Primitive): pass
 ## text string
 class String(Primitive): pass
