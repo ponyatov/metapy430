@@ -1,15 +1,17 @@
 ## @file
-## @brief @ref msp430
+## @brief @ref arm
 ## @copyright Dmitry Ponyatov <dponyatov@gmail.com> CC-NC-ND
 ## github: https://github.com/ponyatov/metapy430
 
 from frame import *
 
-## @defgroup msp430 MSP430
-## @brief @ref msp430
-## @ingroup mcu 
+## @defgroup arm ARM
+## @brief @ref arm
+## @ingroup arch
 ## @{
 
-print MCU('msp430')
+class ARM(ARCH): pass
+
+class CortexA(ARM): pass
 
 ## @}

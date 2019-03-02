@@ -1,15 +1,17 @@
 ## @file
-## @brief @ref msp430
+## @brief @ref avr
 ## @copyright Dmitry Ponyatov <dponyatov@gmail.com> CC-NC-ND
 ## github: https://github.com/ponyatov/metapy430
 
 from frame import *
 
-## @defgroup msp430 MSP430
-## @brief @ref msp430
-## @ingroup mcu 
+## @defgroup avr AVR
+## @brief @ref avr
+## @ingroup mcu
 ## @{
 
-print MCU('msp430')
+class AVR(ARCH): pass
+
+class ATmega(MCU): pass
 
 ## @}

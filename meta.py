@@ -19,9 +19,23 @@ class Meta(Frame): pass
 ## hardware
 class HW(Meta): pass
 
+## @defgroup arch ARCH
+## @{
+
+## architecture
+class ARCH(HW): pass
+
+## @}
+
 ## processor unit
 class CPU(HW): pass
 
+## @}
+
+## @defgroup os OS
+## @{
+
+class OS(Meta): pass
 ## @}
 
 ## @}

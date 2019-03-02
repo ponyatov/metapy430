@@ -3,7 +3,7 @@
 
 (c) Dmitry Ponyatov <<dponyatov@gmail.com>> CC-NC-ND
 
-github: https://github.com/ponyatov/metapy430
+github: https://github.com/ponyatov/metapyMCU
 
 **warning**: manual in [ru] , ask for [en] translation
 
